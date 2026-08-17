@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dignity Wellbeing | 尊厳ある豊かさを、人生のすべての時間に。</title>
+<meta name="description" content="Dignity Wellbeingは、年齢を重ねても自分らしく心地よく生きるために、対話・学び・美容・身体を整える時間を通して、人の尊厳と豊かさを支えるブランドです。">
+<style>
+:root{
+  --bg:#f6f2ec;
+  --paper:#fffdf9;
+  --ink:#27302c;
+  --muted:#6f756f;
+  --line:#ddd7cf;
+  --accent:#7d8a7e;
+  --deep:#344238;
+  --sand:#e9e0d4;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.9;
+  letter-spacing:.04em;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(246,242,236,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(221,215,207,.7);
+}
+.nav{
+  min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px
+}
+.brand{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:20px;letter-spacing:.08em;font-weight:600
+}
+nav{display:flex;gap:24px;font-size:13px}
+nav a:hover{opacity:.6}
+.hero{
+  min-height:78vh;
+  display:grid;place-items:center;
+  padding:88px 0 74px;
+  background:
+    radial-gradient(circle at 78% 25%, rgba(125,138,126,.18), transparent 31%),
+    radial-gradient(circle at 15% 78%, rgba(233,224,212,.85), transparent 32%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:76px
+}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1{
+  margin:20px 0 26px;
+  font-weight:500;
+  font-size:clamp(38px,5.2vw,74px);
+  line-height:1.28;
+  letter-spacing:.05em;
+}
+.lead{font-size:17px;max-width:650px;color:#4e5751}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:50px;padding:0 24px;border:1px solid var(--deep);
+  font-size:13px;letter-spacing:.08em;transition:.2s ease
+}
+.btn.primary{background:var(--deep);color:white}
+.btn:hover{transform:translateY(-2px)}
+.hero-art{
+  aspect-ratio:4/5;border-radius:180px 180px 10px 10px;
+  background:
+    linear-gradient(160deg,rgba(255,255,255,.35),transparent 45%),
+    linear-gradient(145deg,#c7c9bd 0%,#9ca89e 48%,#59695e 100%);
+  position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(52,66,56,.14)
+}
+.hero-art:before{
+  content:"DIGNITY";
+  position:absolute;left:-8px;bottom:8%;
+  font-family:Georgia,serif;font-size:clamp(58px,8vw,120px);
+  color:rgba(255,255,255,.14);letter-spacing:.02em
+}
+.hero-art:after{
+  content:"Wellbeing is not about becoming someone else. It is about returning to yourself.";
+  position:absolute;right:26px;top:42px;width:56%;
+  color:white;font-family:Georgia,serif;font-style:italic;
+  font-size:15px;line-height:1.65;letter-spacing:.02em
+}
+section{padding:108px 0}
+.section-title{font-size:13px;letter-spacing:.18em;color:var(--muted);margin-bottom:20px}
+h2{font-size:clamp(28px,4vw,48px);font-weight:500;line-height:1.5;margin:0 0 30px}
+.philosophy{background:var(--paper)}
+.philosophy-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}
+.big-copy{font-size:28px;line-height:1.75}
+.body-copy{font-size:15px;color:#535b56}
+.services{background:var(--bg)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.card{
+  min-height:280px;padding:32px 26px;background:var(--paper);border:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.num{font-family:Georgia,serif;color:var(--accent);font-size:14px}
+.card h3{font-size:21px;font-weight:500;margin:24px 0 16px}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.message{background:var(--deep);color:white}
+.message .section-title,.message .body-copy{color:rgba(255,255,255,.72)}
+.message-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.quote{
+  font-size:clamp(28px,4vw,48px);line-height:1.55;font-weight:400;margin:0;
+}
+.journey{background:var(--paper)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.step{padding:28px 28px 20px 0;border-right:1px solid var(--line);min-height:200px}
+.step:last-child{border-right:0;padding-left:28px}
+.step:not(:first-child){padding-left:28px}
+.step small{color:var(--muted);font-family:Georgia,serif}
+.step h3{font-size:18px;font-weight:500;margin:14px 0}
+.step p{font-size:13px;color:var(--muted)}
+.note{
+  background:linear-gradient(120deg,var(--sand),#f2ece4);
+  text-align:center
+}
+.note p{max-width:720px;margin:0 auto 32px;color:#555f58}
+.contact{background:var(--paper);text-align:center}
+.contact .mail{
+  display:inline-block;margin-top:18px;font-family:Georgia,serif;font-size:20px;
+  border-bottom:1px solid var(--ink)
+}
+footer{padding:34px 0;background:var(--paper);border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){
+  nav{display:none}
+  .hero-grid,.philosophy-grid,.message-grid{grid-template-columns:1fr}
+  .hero-art{max-width:560px;width:100%;margin:auto;aspect-ratio:5/4;border-radius:130px 130px 10px 10px}
+  .cards{grid-template-columns:1fr 1fr}
+  .timeline{grid-template-columns:1fr 1fr}
+  .step{border-bottom:1px solid var(--line)}
+}
+@media(max-width:600px){
+  .container{width:min(calc(100% - 28px),var(--max))}
+  section{padding:76px 0}
+  .nav{min-height:66px}
+  .hero{padding-top:62px}
+  .hero-grid{gap:44px}
+  .cards,.timeline{grid-template-columns:1fr}
+  .card{min-height:220px}
+  .step,.step:not(:first-child),.step:last-child{padding:24px 0;border-right:0}
+  .actions{display:grid}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">Dignity Wellbeing</a>
+    <nav>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#services">What we do</a>
+      <a href="#story">Story</a>
+      <a href="#founder">Founder</a>
+      <a href="#note">Journal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Dignity × Wellbeing</div>
+      <h1>尊厳ある豊かさを、<br>人生のすべての時間に。</h1>
+      <p class="lead">年齢や環境が変わっても、自分らしさまで手放す必要はありません。Dignity Wellbeingは、対話・学び・美容・身体を整える時間を通して、その人がその人らしく生きる力を支えていきます。</p>
+      <div class="actions">
+        <a class="btn primary" href="#philosophy">私たちの思想</a>
+        <a class="btn" href="#note">noteを読む</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="Dignity Wellbeing visual"></div>
+  </div>
+</section>
+
+<section class="philosophy" id="philosophy">
+  <div class="container philosophy-grid">
+    <div>
+      <div class="section-title">PHILOSOPHY</div>
+      <h2>人は、何歳からでも<br>自分を取り戻せる。</h2>
+    </div>
+    <div>
+      <p class="big-copy">尊厳とは、特別な人だけが持つものではなく、誰もが生まれながらに持っている「自分らしく在る権利」だと考えています。</p>
+      <p class="body-copy">社会的な役割が変わるとき。子育てが終わったとき。仕事を離れたとき。介護を受ける立場になったとき。人は、これまで築いてきた自分の輪郭を見失うことがあります。そんなときに必要なのは、誰かに新しい自分を与えてもらうことではなく、自分の中にある価値をもう一度思い出す時間なのかもしれません。</p>
+      <p class="body-copy">Dignity Wellbeingは、美容だけに限定しません。対話、身体、学び、社会とのつながり。人が自分らしく生き続けるために必要なものを、横断的に考え、育てていくブランドです。</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">WHAT WE DO</div>
+    <h2>これから形にしていくこと</h2>
+    <div class="cards">
+      <article class="card"><div><div class="num">01</div><h3>Dialogue</h3><p>一人ひとりの背景に敬意を払い、自己を取り戻すための対話の時間。介護・高齢者領域を含めた展開を目指します。</p></div></article>
+      <article class="card"><div><div class="num">02</div><h3>Beauty Care</h3><p>肌や身体に丁寧に触れ、自分を慈しむ時間。若く見せるためではなく、今の自分を心地よく、美しく整えるためのお手入れです。</p></div></article>
+      <article class="card"><div><div class="num">03</div><h3>Wellbeing</h3><p>心だけでなく身体も整える。無理なく続けられる運動や、自分の身体と向き合う時間を提案します。</p></div></article>
+      <article class="card"><div><div class="num">04</div><h3>Learning</h3><p>年齢を重ねた後も、好奇心と社会性を育て続けるための学び。将来は「60歳からの第2の学校」へ。</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="message" id="story">
+  <div class="container message-grid">
+    <div>
+      <div class="section-title">WHY DIGNITY WELLBEING</div>
+      <p class="quote">「その人らしさ」を、<br>最後まで失わない社会へ。</p>
+    </div>
+    <div>
+      <p class="body-copy">美容、教育、職業訓練、マネジメント。さまざまな現場で人と向き合う中で、外見や能力だけでは測れない「人の尊厳」の大切さを感じてきました。</p>
+      <p class="body-copy">誰かに必要とされること。自分の話をきちんと聞いてもらうこと。学び続けること。美しくありたいと思うこと。自分で選べること。その一つひとつが、人が人として生きる力につながっています。</p>
+      <p class="body-copy">Dignity Wellbeingは、小さな実践から始め、やがて世代や立場を超えて「尊厳ある豊かさ」を社会に増やしていくことを目指します。</p>
+    </div>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="container">
+    <div class="section-title">OUR JOURNEY</div>
+    <h2>思想から、社会の仕組みへ。</h2>
+    <div class="timeline">
+      <div class="step"><small>NOW</small><h3>思想を伝える</h3><p>noteを中心に、日々の体験から感じた「尊厳」について発信し、価値観を共有します。</p></div>
+      <div class="step"><small>NEXT</small><h3>対話を届ける</h3><p>一対一の対話や小さなセミナーなど、直接人に届く形でサービスを始めます。</p></div>
+      <div class="step"><small>EXPAND</small><h3>学びと身体へ広げる</h3><p>心・身体・社会性を一体として捉え、ウェルビーイングを支える場を育てます。</p></div>
+      <div class="step"><small>VISION</small><h3>第2の学びの学校へ</h3><p>60歳以降も学び、つながり、社会に参加できる新しい選択肢をつくることを目指します。</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="philosophy" id="founder">
+  <div class="container philosophy-grid">
+    <div>
+      <div class="section-title">FOUNDER / PROFILE</div>
+      <h2>田島 真由美</h2>
+      <p class="body-copy"><strong>Dignity Wellbeing Founder</strong></p>
+      <p class="body-copy">百貨店での美容職をはじめ、化粧品会社本社での教育、女子刑務所での美容職業訓練、美容サロンのマネジメントなど、さまざまな立場・環境にいる人と関わってきました。</p>
+      <p class="body-copy">その経験を通して、美容とは単に外見を美しくすることではなく、自分自身を大切に扱う感覚や、その人らしさを取り戻すことにもつながると感じています。</p>
+    </div>
+    <div>
+      <div class="section-title">MESSAGE</div>
+      <p class="big-copy">人は、最後まで「自分」であり続けていい。</p>
+      <p class="body-copy">子育てが終わる。仕事を離れる。身体が以前のようには動かなくなる。誰かの助けを必要とするようになる。けれど、役割が変わっても、その人自身の価値まで失われるわけではありません。</p>
+      <p class="body-copy">私はこれまで多くの方と関わる中で、人は「自分が大切に扱われている」と感じたとき、もう一度その人らしい表情を取り戻すことを何度も見てきました。</p>
+      <p class="body-copy">だから私は、美容だけでも、健康だけでも、学びだけでもない場所をつくりたいと考えています。対話すること。お手入れをすること。身体を整えること。学び続けること。それらを「自分自身を大切に生きる」という一つの考え方でつないでいく。それが、Dignity Wellbeingです。</p>
+      <p class="body-copy">若さを取り戻すことを目指すのではなく、年齢を重ねたからこそ生まれる美しさや知性、経験を大切にしたい。そしていつか、年齢に関係なく、人が学び、人とつながり、社会に参加し、自分の人生を楽しみ続けられる場所へ。</p>
+      <p class="body-copy"><strong>尊厳ある豊かさを、人生のすべての時間に。</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="note" id="note">
+  <div class="container">
+    <div class="section-title">JOURNAL / NOTE</div>
+    <h2>日常の中にある「尊厳」を綴っています。</h2>
+    <p>旅先で出会った人、仕事で出会った人、家族との時間。大きな理念は、いつも小さな出来事の中から生まれます。Dignity Wellbeingの原点となる文章を、noteで発信しています。</p>
+    <a class="btn primary" href="#" onclick="alert('ここにあなたのnoteのURLを設定してください。'); return false;">noteを読む</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title">CONTACT</div>
+    <h2>共感から、つながりが始まる。</h2>
+    <p class="body-copy">Dignity Wellbeingの思想や活動にご関心のある施設・企業・個人の方へ。<br>協業、取材、セミナー、対話サービスなどについてお気軽にご連絡ください。</p>
+    <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>© 2026 Dignity Wellbeing</div>
+    <div>Dignity for every stage of life.</div>
+  </div>
+</footer>
+</body>
+</html>
