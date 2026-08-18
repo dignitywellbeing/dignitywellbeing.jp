@@ -208,10 +208,10 @@
     }
 
     .about-image{
-      min-height:300px;
+      min-height:270px;
       border-radius:24px;
       background:
-      url("dignity-window-vase-mug.png") center 95% / cover no-repeat;
+      url("dignity-window-vase-mug.png") center 65% / cover no-repeat;
       position:relative;
       overflow:hidden;
     }
@@ -460,6 +460,22 @@
 
 .about-image{
   box-shadow:none;
+}/* トップの2つのボタンを横並びにする */
+.actions{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+/* noteボタン */
+.actions .btn:not(.btn-primary){
+  border:1px solid var(--sage);
+  border-radius:999px;
+  padding:16px 28px;
+  background:transparent;
+  color:var(--ink);
 }
   </style>
 </head>
