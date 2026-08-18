@@ -445,7 +445,22 @@
       .about-card{
         padding:18px;
       }
-    }
+    }.hero-art::before,
+.hero-art::after,
+.about-image::before,
+.about-image::after{
+  content:none !important;
+  display:none !important;
+}
+
+.hero-art{
+  border-radius:0;
+  box-shadow:none;
+}
+
+.about-image{
+  box-shadow:none;
+}
   </style>
 </head>
 
