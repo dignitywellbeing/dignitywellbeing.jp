@@ -148,10 +148,9 @@
       min-height:580px;
       border-radius:220px 220px 0 0;
       overflow:hidden;
-      background:
-        linear-gradient(rgba(248,245,237,.16),rgba(145,158,143,.2)),
-        radial-gradient(circle at 70% 18%,rgba(255,255,255,.95),transparent 30%),
-        linear-gradient(145deg,#ece8dc 0%,#dfe2d8 48%,#9ca99d 100%);
+     background:
+  linear-gradient(90deg, var(--bg) 0%, rgba(247,243,236,.88) 16%, rgba(247,243,236,.28) 38%, rgba(247,243,236,0) 58%),
+  url("dignity-olive-light.png") center right / cover no-repeat;
     }
 
     .hero-art::before,
@@ -212,9 +211,7 @@
       min-height:270px;
       border-radius:24px;
       background:
-        linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.08)),
-        radial-gradient(circle at 70% 30%,rgba(255,255,255,.95),transparent 30%),
-        linear-gradient(145deg,#e9ddc4 0%,#d9cfb5 46%,#9da68e 100%);
+      url("dignity-window-vase-mug.png") center 65% / cover no-repeat;
       position:relative;
       overflow:hidden;
     }
@@ -368,7 +365,6 @@
       }
 
       .hero-grid,
-      .about-card,
       .two-col,
       .cards{
         grid-template-columns:1fr;
@@ -448,7 +444,38 @@
       .about-card{
         padding:18px;
       }
-    }
+    }.hero-art::before,
+.hero-art::after,
+.about-image::before,
+.about-image::after{
+  content:none !important;
+  display:none !important;
+}
+
+.hero-art{
+  border-radius:0;
+  box-shadow:none;
+}
+
+.about-image{
+  box-shadow:none;
+}/* トップの2つのボタンを横並びにする */
+.actions{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+/* noteボタン */
+.actions .btn:not(.btn-primary){
+  border:1px solid var(--sage);
+  border-radius:999px;
+  padding:16px 28px;
+  background:transparent;
+  color:var(--ink);
+}
   </style>
 </head>
 
@@ -483,18 +510,21 @@
 
           <p class="lead">
             年齢や環境が変わっても、自分らしさまで手放す必要はありません。<br>
-            Dignity Wellbeingは、一人ひとりが尊厳をもって、心地よく生きることを支えるサービスと学びの場をつくっていきます。
+Dignity Wellbeingは、対話・学び・美容・身体を整える時間を通して、その人がその人らしく生きる力を支えていきます。
           </p>
 
-          <div class="actions">
-            <a class="btn btn-primary" href="#philosophy">
-              私たちの想いを見る
-              <span>→</span>
-            </a>
-          </div>
-        </div>
+         <div class="actions">
+  <a class="btn btn-primary" href="#philosophy">
+    私たちの想いを見る
+    <span>→</span>
+  </a>
 
-        <div class="hero-art" aria-label="Dignity Wellbeing visual">
+  <a class="btn" href="https://note.com/great_squid4402" target="_blank" rel="noopener noreferrer">
+    noteを読む
+    <span>→</span>
+  </a>
+</div> 
+                 <div class="hero-art" aria-label="Dignity Wellbeing visual">
           <div class="quote">
             Wellbeing is not about<br>
             becoming someone else.<br>
@@ -517,7 +547,7 @@
               美容・教育・心理の経験をもとに、「尊厳ある豊かさ」を軸に活動しています。
             </p>
             <p>
-              介護施設での対話サービスから、60歳からの学びの場まで。
+              介護施設での対話サービスから、シニア世代の学びの場まで。
             </p>
             <p>
               一人ひとりが、自分らしく輝き続けられる未来を目指して。
@@ -547,12 +577,11 @@
           </p>
 
           <p class="body-copy">
-            社会的な役割が変わるとき。子育てが終わったとき。仕事を離れたとき。介護を受ける立場になったとき。
+            社会的な役割が変わるとき。子育てが終わったとき。仕事を離れたとき。介護を受ける立場になったとき。人は、これまで築いてきた自分の輪郭を見失うことがあります。そんなときに必要なのは、誰かに新しい自分を与えてもらうことではなく、自分の中にある価値をもう一度思い出す時間なのかもしれません。
           </p>
 
           <p class="body-copy">
-            Dignity Wellbeingは、美容だけに限定しません。対話、身体、学び、社会とのつながり。人が自分らしく生き続けるために必要な時間と環境を考えていきます。
-          </p>
+            Dignity Wellbeingは、美容だけに限定しません。対話、身体、学び、社会とのつながり。人が自分らしく生き続けるために必要なものを、横断的に考え、育てていくブランドです。          </p>
         </div>
 
       </div>
@@ -567,18 +596,18 @@
         <div class="cards">
 
           <div class="card">
-            <h3>Dialogue</h3>
-            <p>介護施設などで、一人ひとりの人生や背景に向き合う対話の時間をつくります。</p>
+            <h3>01 Dialogue</h3>
+            <p>一人ひとりの背景に敬意を払い、自己を取り戻すための対話の時間。介護・高齢者領域を含めた展開を目指します。</p>
           </div>
 
           <div class="card">
-            <h3>Learning</h3>
-            <p>60歳からの学び直しや、社会とのつながりを育てる新しい学びの場を構想しています。</p>
+            <h3>02 Learning</h3>
+            <p>年齢を重ねた後も、好奇心と社会性を育て続けるための学び。将来は「シニア世代、第２の学校」へ。</p>
           </div>
 
           <div class="card">
-            <h3>Beauty & Body</h3>
-            <p>美容や身体を整えることを、自分らしさと尊厳を取り戻すための時間として捉えます。</p>
+            <h3>03　Beauty & Body</h3>
+            <p>肌や身体に丁寧に触れ、自分を慈しむ時間。若く見せるためではなく、今の自分を心地よく、美しく整えるためのお手入れです。</p>
           </div>
 
         </div>
