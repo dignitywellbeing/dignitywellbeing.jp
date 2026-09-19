@@ -49,7 +49,7 @@
       position:sticky;
       top:0;
       z-index:20;
-      background:rgba(247,243,236,.96);
+     background:rgba(247,250,252,.96);
       backdrop-filter:blur(10px);
       border-bottom:1px solid var(--line);
     }
@@ -62,13 +62,14 @@
       gap:32px;
     }
 
-    .brand{
-      font-family:"Noto Serif JP",serif;
-      font-size:29px;
-      font-weight:600;
-      letter-spacing:.03em;
-      white-space:nowrap;
-    }
+   .brand{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:34px;
+  font-weight:400;
+  letter-spacing:.08em;
+  white-space:nowrap;
+  color:var(--ink);
+}
 
     nav{
       display:flex;
@@ -79,10 +80,22 @@
       letter-spacing:.03em;
     }
 
-    .hero{
-      padding:70px 0 0;
-    }
-
+.hero{
+  padding:70px 0 0;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 12%,
+      rgba(255,255,255,.98) 0%,
+      rgba(255,255,255,.72) 18%,
+      rgba(225,239,248,.48) 38%,
+      transparent 62%),
+    linear-gradient(135deg,
+      #ffffff 0%,
+      #f7fbfd 42%,
+      #eaf3f8 72%,
+      #dceaf3 100%);
+}
     .hero-grid{
       display:grid;
      grid-template-columns: .9fr 1.1fr;
@@ -99,14 +112,15 @@ align-items: start;
       font-weight:500;
     }
 
-    .hero h1{
-      margin:26px 0 26px;
-      font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
-      font-size:clamp(38px,4.4vw,60px);
-      font-weight:400;
-      line-height:1.45;
-      letter-spacing:.03em;
-    }
+  .hero h1{
+  margin:30px 0 28px;
+  font-family:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size:clamp(40px,4.6vw,64px);
+  font-weight:500;
+  line-height:1.45;
+  letter-spacing:.06em;
+  color:var(--ink);
+}
 
     .hero h1 span{
       display:block;
@@ -547,8 +561,9 @@ align-items: start;
 <p class="lead">
   これまで歩んできた人生を大切にしながら、<br>
   これからの日々にも、新しい出会いと心が動く時間を。<br><br>
-  GRACE &amp; WAYは、対話・学び・美容・運動を通して、<br>
- 一人ひとりの「これから」を豊かにする時間を届けます。
+
+  対話・学び・美容・運動を通して、<br>
+  一人ひとりの「これから」を豊かにする時間を届けます。
 </p>        
   <div class="actions">
   <a class="btn btn-primary" href="#story">
