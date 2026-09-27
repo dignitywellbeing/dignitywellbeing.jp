@@ -602,6 +602,19 @@ nav a{
   display: flex;
   justify-content: center;
 
+ /* スマホでもメニュー4項目を1行に */
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+header nav a {
+  white-space: nowrap;
+  font-size: 11px;
+}
   </style>
 </head>
 
