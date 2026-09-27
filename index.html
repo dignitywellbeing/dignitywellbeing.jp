@@ -560,14 +560,33 @@ nav a{
   background:transparent;
   color:var(--ink);
 }
-@media (max-width:900px){
-  .hero-art{
-    min-height:200px !important;
-    height:200px !important;
-    max-height:200px !important;
-  }
-}    
 @media (max-width: 767px) {
+
+  #contact h2 {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+@media (max-width: 767px) {
+
+  #contact h2 {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    font-size: 11px !important;
+  }
+
+  nav a {
+    white-space: nowrap !important;
+  }
+
+}
+
+
   #contact h2 {
     font-size: 30px;
     white-space: nowrap;
