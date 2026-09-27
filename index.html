@@ -574,7 +574,21 @@ nav a{
   }
 }
 
+/* トップ：海を上、文章を下、全体を中央揃え */
+.hero .hero-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .hero-art {
+  order: 1;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
 .hero .hero-grid > div:first-child {
+  order: 2;
   width: 100%;
   text-align: center;
 }
@@ -587,12 +601,7 @@ nav a{
 .hero .actions {
   display: flex;
   justify-content: center;
-}
 
-.hero .hero-art {
-  width: 100%;
-  margin-bottom: 28px;
-}
   </style>
 </head>
 
