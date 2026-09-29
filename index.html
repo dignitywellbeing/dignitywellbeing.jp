@@ -694,6 +694,27 @@ header nav a {
   margin-top: -18px !important;
   margin-bottom: 28px !important;
 }
+/* Grace Dialogue STEP 枠 */
+.flow-step {
+  border: 1px solid #d9e1e6;
+  border-radius: 12px;
+  padding: 26px 24px;
+  margin: 0 0 48px 0;
+  position: relative;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* STEP間の矢印 */
+.flow-step:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 300;
+  color: #9aabb6;
+}
 </style>
 </head>
 
