@@ -283,7 +283,7 @@ color:var(--ink);
 
     .two-col{
       display:grid;
-     grid-template-columns:1fr;
+     grid-template-columns:1fr 1fr;
       gap:70px;
       align-items:start;
     }
@@ -748,7 +748,14 @@ header nav a {
   max-width:680px;
   margin:0 auto;
 }  
-</style>
+/* Grace Dialogue：PC画面の配置調整 */
+@media (min-width: 769px) {
+  #dialogue > .container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ </style>
 </head>
 
 <body id="top">
