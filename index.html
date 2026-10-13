@@ -747,13 +747,13 @@ header nav a {
   max-width:680px;
   margin:0 auto;
 }  
-/* Grace Dialogue：PC画面の配置調整 */
-/* Grace Dialogue：PC表示 */
+/* Grace Dialogue：PC画面の配置 */
 @media (min-width: 769px) {
   #dialogue > .container {
+    width: min(900px, calc(100% - 48px));
     max-width: 900px;
-    margin: 0 auto;
-    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   #dialogue .section-label,
@@ -762,7 +762,7 @@ header nav a {
   #dialogue p,
   #dialogue .big-copy,
   #dialogue .body-copy {
-    text-align: center !important;
+    text-align: left !important;
   }
  </style>
 </head>
