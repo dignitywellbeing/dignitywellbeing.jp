@@ -765,6 +765,12 @@ header nav a {
     text-align: left !important;
   }
   }
+/* PCでは文章途中の改行だけを減らす */
+@media screen and (min-width: 769px) {
+  #dialogue br.sp-only {
+    display: none;
+  }
+ } 
  </style>
 </head>
 
