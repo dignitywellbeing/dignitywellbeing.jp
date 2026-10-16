@@ -318,7 +318,12 @@ color:var(--ink);
       color:#505852;
       margin:0 0 14px;
     }
-
+@media screen and (max-width: 767px) {
+  .body-copy {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+}
     .cards{
       display:grid;
       grid-template-columns:repeat(4,1fr);
@@ -812,7 +817,53 @@ header nav a {
 #journal .actions {
   justify-content: center;
 }
-   
+    
+/* Grace Dialogue 料金案内 */
+.grace-pricing {
+  max-width: 680px;
+  margin: 45px auto;
+  padding: 32px 28px;
+  background: #f8f7f3;
+  border: 1px solid #dedbd1;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.grace-pricing h2 {
+  text-align: center;
+  margin: 0 0 28px;
+  font-size: 22px;
+}
+
+.grace-pricing .body-copy {
+  margin-bottom: 24px;
+  line-height: 1.9;
+}
+
+.grace-pricing .body-copy:last-child {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .grace-pricing {
+    margin: 32px 12px;
+    padding: 26px 20px;
+  }
+
+  .grace-pricing h2 {
+    font-size: 19px;
+  }
+
+  .grace-pricing .body-copy {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  .grace-pricing .body-copy:last-child {
+    font-size: 12px;
+  }
+}
  </style>
 </head>
 
@@ -837,8 +888,8 @@ header nav a {
 
         <div>
 <h1>
-  <span>大切なご家族へ、</span>
-  <span>時間という贈りもの。</span>
+  <span>大切なご家族へ</span>
+  <span>時間という贈りもの</span>
 </h1>
 
 
@@ -869,7 +920,7 @@ header nav a {
 <p class="dialogue-subtitle">経験や知識を語る時間</p>
 
 <h2>
-  大切なご両親へ、<br>
+  大切なご両親へ、
   毎週楽しみにできる時間を
 </h2>
 
@@ -886,54 +937,56 @@ header nav a {
 
   それぞれの人生には、その方にしかない豊かな経験や知恵があります。<br><br>
 
-  Grace Dialogueは、これまで歩んできた人生を大切にしながら、<br class="sp-only">
-  ご自身の好きなことや得意なことを語り、<br class="sp-only">
-  新しい発見や喜びに出会う時間です。<br><br>
+  
+Grace Dialogueは、これまで歩んできた人生を大切にしながら、
+ご自身の好きなことや得意なことを語り、
+新しい発見や喜びに出会う時間です。<br><br>
 
-  誰かのために過ごしてきた時間も、<br class="sp-only">
-  これからはご自身のための時間も。<br><br>
+誰かのために過ごしてきた時間も、
+これからはご自身のための時間も。<br><br>
 
-  「次は何を話そう」<br>
-  「また来てくれる日が楽しみ」<br><br>
+「次は何を話そう」
+「また来てくれる日が楽しみ」<br><br>
 
-  そんなふうに、毎週を楽しみにしていただける時間をお届けします。
-</p>
+そんなふうに、毎週を楽しみにしていただける時間をお届けします。
+
 
 <h2>私たちがお届けするのは<br>生活支援ではありません</h2>
 
 <p class="body-copy">
-  Grace Dialogueは、<br class="sp-only">
-  介護・見守り・留守番・家事代行などを<br class="sp-only">
-  目的としたサービスではありません。<br><br>
+  Grace Dialogueは、介護・見守り・留守番・家事代行などを目的としたサービスではありません。<br><br>
 
-  日常生活のお手伝いをするのではなく、<br class="sp-only">
+  日常生活のお手伝いをするのではなく、
   その方自身に向き合う「時間」に特化しています。<br><br>
 
-  その方のために時間を使うこと。<br class="sp-only">
+  その方のために時間を使うこと。
   それが、Grace Dialogueの大切にしていることです。
 </p>
 
+
 <h2>ご家族だからこそ、話せないこともあります。</h2>
+
 
 <p class="body-copy">
   家族は、とても近く、大切な存在です。<br><br>
 
-  だからこそ、心配をかけたくなかったり、<br class="sp-only">
-  遠慮してしまったり。<br class="sp-only">
+  だからこそ、心配をかけたくなかったり、
+  遠慮してしまったり。
   家族の前では、なかなか言葉にできないこともあります。<br><br>
 
-  また、長年家族を支えてきた方にも、<br class="sp-only">
-  ご家族の中での役割を少し離れ、<br class="sp-only">
-  ご自身の好きなことや関心のある世界を<br class="sp-only">
+  また、長年家族を支えてきた方にも、
+  ご家族の中での役割を少し離れ、
+  ご自身の好きなことや関心のある世界を
   自由に語っていただきたい。<br><br>
 
-  家族でも介護職でもない第三者だからこそ、<br class="sp-only">
+  家族でも介護でもない第三者だからこそ、
   生まれる会話があります。<br><br>
 
-  Grace Dialogueは、ご家族との大切な関係を尊重しながら、<br class="sp-only">
-  その方が一人の人として、<br class="sp-only">
+  Grace Dialogueは、ご家族との大切な関係を尊重しながら、
+  その方が一人の人として、
   自分らしく過ごせる時間をお届けします。
 </p>
+
    
 <h2>お一人おひとりのために<br>準備する時間から</h2>
 
@@ -1125,6 +1178,27 @@ header nav a {
   ご希望に合わせて、定期的にご利用いただけます。
 </p>
 
+<div class="grace-pricing">
+  <h2>Grace Dialogue ご利用料金</h2>
+
+  <p class="body-copy">
+    <strong>初回 Grace Dialogue｜60分</strong><br>
+    13,200円（税込）<br>
+   ご家族も同席いただけます。
+  </p>
+
+  <p class="body-copy">
+    <strong>2回目以降 Grace Dialogue｜60分</strong><br>
+    16,500円（税込）<br>
+    定期的なご利用を基本としています。
+  </p>
+
+  <p class="body-copy">
+    ※対面の場合、地域に応じた交通費を別途申し受けます。<br>
+    ※オンラインでのご利用料金は別途ご案内いたします。
+  </p>
+</div>
+
 <h2>
   2026年12月4日<br>
   無料事前相談・ご予約受付開始
@@ -1189,8 +1263,9 @@ header nav a {
   これまでの人生を大切にしながら、
   これからも人と語り、学び、美しく、健やかに生きていく。<br><br>
 
-  そんな時間を届けたいという思いから、
-  GRACE AND WAYを始めます。
+ 
+そんな時間を、一人でも多くの方へ。<br>
+GRACE AND WAYは、人生を重ねたその先にも、一人ひとりの尊厳が大切にされる社会を目指します。
 </p>
         </div>
 
@@ -1225,7 +1300,9 @@ header nav a {
 
 これまでの経験をひとつにつなぎ、<strong>人生の後半を、より豊かに、自分らしく歩んでいくための時間をつくりたい。</strong><br><br>
 
-その思いから、GRACE AND WAYを始めます。
+
+その思いを胸に、これまでの経験を活かしながら、一人ひとりの人生に丁寧に向き合ってまいります。
+
 </p>
       </div>
     </section>
