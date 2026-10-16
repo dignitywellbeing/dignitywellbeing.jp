@@ -878,6 +878,29 @@ header nav a {
     text-align: center;
   }
 }
+
+/* 予約案内のスマホ表示 */
+.notice-mobile-break {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .notice-mobile-break {
+    display: block;
+  }
+
+  .reservation-notice h2 {
+    font-size: 20px;
+    line-height: 1.7;
+    overflow-wrap: normal;
+  }
+
+  .reservation-notice .body-copy {
+    font-size: 16px;
+    line-height: 1.9;
+    overflow-wrap: normal;
+  }
+}
  
  </style>
 </head>
@@ -1215,25 +1238,22 @@ Grace Dialogueは、これまで歩んできた人生を大切にしながら、
 </div>
 
 
+
 <div class="reservation-notice">
   <h2>
     2026年12月4日<br>
-    無料事前相談・ご予約受付開始
+    無料事前相談・<br class="notice-mobile-break">ご予約受付開始
   </h2>
 
   <p class="body-copy">
-    Grace Dialogueでは、ご利用前に<br>
-    20分の無料オンライン事前相談をご用意しています。<br><br>
+    Grace Dialogueでは、ご利用前に20分の無料オンライン事前相談をご用意しています。<br><br>
 
-    サービスの内容やご希望についてお話ししたうえで、<br>
-    ご納得いただいてから、ご予約をご検討いただけます。<br><br>
+    サービスの内容やご希望を伺い、ご納得いただいたうえで、ご予約をご検討いただけます。<br><br>
 
-    現在は、サービスについてのご質問や<br>
-    一般的なお問い合わせのみ承っております。
+    現在は、サービスについてのご質問や一般的なお問い合わせのみ承っております。
   </p>
 </div>
 
- 
    </div>
 
   </div>
