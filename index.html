@@ -1010,27 +1010,115 @@ header nav a {
       </div>
 
       </section>
-<section aria-labelledby="grace-examples-title"
-         style="max-width: 640px; margin: 40px auto; padding: 0 16px;">
+<style>
+  .grace-examples {
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .grace-example-card {
+    margin: 24px 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f8f3ed;
+    color: #302b26;
+  }
+
+  .grace-example-photo {
+    aspect-ratio: 1200 / 680;
+    overflow: hidden;
+  }
+
+  .grace-example-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .grace-example-text {
+    padding: 20px;
+  }
+
+  .grace-example-text h3 {
+    margin: 0 0 4px;
+    color: #19334e;
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .grace-example-subtitle {
+    margin: 0 0 12px;
+    color: #735b37;
+  }
+
+  .grace-example-text blockquote {
+    margin: 16px 0 0;
+    padding-left: 12px;
+    border-left: 3px solid #19334e;
+    color: #19334e;
+  }
+
+  .grace-example-note {
+    margin: 8px 0 0;
+    color: #574d43;
+    font-size: 14px;
+  }
+</style>
+
+<section class="grace-examples" aria-labelledby="grace-examples-title">
   <p>Grace Dialogueは、年齢を重ねた方が、思い出や今の関心を一対一で語り合う、対面・オンラインのサービスです。</p>
 
   <h2 id="grace-examples-title">ご利用のイメージ</h2>
   <p>ご利用の頻度や日程は、ご希望を伺いながら決めていきます。</p>
 
-  <div style="display: grid; gap: 20px;">
-    <img src="grace-example-1.png"
-         alt="施設で暮らすお父さまへ。月に2回、施設のラウンジでお仕事や経験について語り合う利用例。"
-         width="1200" height="1560"
-         style="display: block; width: 100%; height: auto;">
-    <img src="grace-example-2.png"
-         alt="家族を支えてきたお母さまへ。月に1回、対面またはオンラインでご自身の物語を語る利用例。"
-         width="1200" height="1560" loading="lazy"
-         style="display: block; width: 100%; height: auto;">
-    <img src="grace-example-3.png"
-         alt="ご自身のために。毎週オンラインで、読んだ本や関心のあることを語り合う利用例。"
-         width="1200" height="1560" loading="lazy"
-         style="display: block; width: 100%; height: auto;">
-  </div>
+  <article class="grace-example-card">
+    <div class="grace-example-photo">
+      <img src="grace-example-1.png"
+           alt="ラウンジのテーブルを囲んで座る二人"
+           width="1200" height="1560">
+    </div>
+    <div class="grace-example-text">
+      <h3>施設で暮らすお父さまへ</h3>
+      <p class="grace-example-subtitle">語ることが、まだまだある</p>
+      <p>ご家族からお父さまへの贈り物に。月に2回、施設のラウンジでお会いします。現役時代のお仕事や、長年培ってこられたご経験について、当時のことを思い出しながら語っていただく時間です。お話の内容は、ご本人のご了承を得た範囲で、Dialogue Letterにてご家族へお届けします。</p>
+      <blockquote>「自分の仕事の話を、こんなに興味を持って聞いてもらえるなんて、思わなかった」</blockquote>
+      <p class="grace-example-note">※ご利用場面と会話はイメージです</p>
+      <p class="grace-example-note">※施設で実施する場合は、事前に施設の許可をお取りいただきます</p>
+    </div>
+  </article>
+
+  <article class="grace-example-card">
+    <div class="grace-example-photo">
+      <img src="grace-example-2.png"
+           alt="窓辺で手紙を読む女性の手元"
+           width="1200" height="1560" loading="lazy">
+    </div>
+    <div class="grace-example-text">
+      <h3>家族を支えてきたお母さまへ</h3>
+      <p class="grace-example-subtitle">「私」の物語を語る時間</p>
+      <p>ご家族からお母さまへの贈り物に。月に1回、対面またはオンラインでお会いします。若い頃の夢やお仕事、家族と過ごした日々、そして今、楽しみにしていること。お母さまご自身の物語を、ゆっくり語っていただく時間です。</p>
+      <blockquote>「結婚前の私の話なんて、もう何十年もしていなかったわ」</blockquote>
+      <p class="grace-example-note">※ご利用場面と会話はイメージです</p>
+    </div>
+  </article>
+
+  <article class="grace-example-card">
+    <div class="grace-example-photo">
+      <img src="grace-example-3.png"
+           alt="窓辺のテーブルに置かれた本と眼鏡"
+           width="1200" height="1560" loading="lazy">
+    </div>
+    <div class="grace-example-text">
+      <h3>ご自身のために</h3>
+      <p class="grace-example-subtitle">好奇心を語り合う、私の時間</p>
+      <p>ご自身のお申込みで、毎週、オンラインでお会いします。読んだ本のこと、世界の出来事のこと、心が動いた話。ふだんは話す機会の少ないことも、関心の赴くままに語り合える時間です。</p>
+      <blockquote>「次に話すのが楽しみになったよ。<br>さあ、調べものでもするか」</blockquote>
+      <p class="grace-example-note">※ご利用場面と会話はイメージです</p>
+    </div>
+  </article>
 </section>
  
 <section class="content-section" id="dialogue" style="scroll-margin-top:110px;">
